@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trello</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button id='buttonNav'>
+                    <i class="fa fa-trello" aria-hidden="true"></i>
+                    Tableros
+                </button>
+                </li>
+
+                <li><input type="search" id='boxsearch'></li>
+                <li><img src="assets/img/trello-logo-white.svg" name='logo' id='logo' alt=""></li>
+                <li><i class="fa fa-plus" aria-hidden="true"></i></li>
+                <li><i class="fa fa-info" aria-hidden="true"></i></li>
+                <li><i class="fa fa-bell-o" aria-hidden="true"></i></li>
+                <li><img src="assets/img/user.jpg" id='user' alt=""></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id='content'>
+        <ul id='title'>            
+            <li><a href=""><h3>Tablero</h3></a></li>
+            <li><a href=""><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-lock" aria-hidden="true"></i><p> Privado</p></a></li>
+        </ul>
+
+        <div id='lists'>
+            <p id='lista'>Añadir una lista...</p>
+            
+            <form action="" id='form'>
+                    <input placeholder="Añadir una lista..." id="getList" type="text" name="name">
+                    <input type="submit" id='guardar' value="Guardar">
+                    <input type="submit" name="" class="cancel" value='x'>
+            </form> 
+        </div>
+
+    </section>
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+<!-- <i class="fa fa-info-circle" aria-hidden="true"></i> -->

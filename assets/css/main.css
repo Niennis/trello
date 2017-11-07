@@ -1,0 +1,200 @@
+body{
+    background-color: rgb(145, 73, 156);
+    margin:0px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* INICIO HEADER*/
+
+header{
+    position: fixed;
+    width:100%;
+    height:45px;
+    background-color: rgba(124, 63, 134, 0.849);
+    color:white;
+}
+
+ul{
+    width:100%;
+    height:45px;
+    border:1px solid transparent;
+    margin:0px;
+}
+
+li{
+    list-style-type: none;
+    display:inline-block;
+    border:1px solid transparent;
+    vertical-align: middle;
+    
+}
+
+li:nth-child(0n+3){
+    margin-left: 24%;
+}
+
+#logo{
+    height:25px;
+    opacity: 0.5;
+}
+
+#buttonNav{
+    background-color: rgb(176, 138, 182);
+    border:none;  
+    border-radius: 2px;
+    height:30px;
+    width:100px;  
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left:-30px;
+    margin-top: 5px;
+}
+
+#boxsearch{
+    height:30px;
+    border: none;
+    border-radius: 2px; 
+    margin-top:5px;   
+    background-color: rgba(255, 255, 255, 0.308);
+}
+
+.fa-trello{
+    font-size: 18px !important;    
+}
+
+.fa-plus, .fa-info, .fa-bell-o{
+    height:24px;
+    width:30px;
+    padding-top:6px;
+    border:1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 3px;
+    text-align: center;
+    margin-top:5px;
+}
+
+#user{
+    width:34px;
+    border-radius: 20px;
+    margin-top: 3px;
+}
+
+li:nth-child(0n+4){
+    margin-left: 35%;
+}
+
+/* FIN HEADER*/
+
+/* INICIO CONTENT*/
+/* inicio título*/
+#content{
+    width: 100%;
+    position: relative;
+    top:50px;
+    left:20px;
+    color:white;
+    border:1px solid transparent;
+}
+
+#title{
+    width:250px;
+    height: 30px;
+    border:1px solid transparent;
+    margin:0px;
+    padding-left: 0px;
+}
+
+
+#title li{
+    border:1px solid transparent;
+    height: 30px;    
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+#title li:hover{
+    border:1px solid transparent;
+    border-radius: 3px;
+    background-color: rgba(124, 63, 134, 0.849);
+}
+
+#title a{
+    color:white;
+}
+
+h3{
+    display: inline-block;
+    border:1px solid transparent;
+    line-height: 30px;
+    margin: 0px;
+}
+
+.fa-star-o{
+    margin-top:7px;
+}
+
+p{
+    display: inline-block;
+    border:1px solid transparent;
+    line-height: 30px;
+    margin: 0px;
+    
+}
+
+/* fin título*/
+
+/*inicio lists*/
+#lists{
+    position: relative;
+    top:10px;
+}
+
+#lista{
+    color:white;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 40px;
+    width:270px;
+    height:40px;
+    border-radius: 2px;
+    background-color:rgb(90, 33, 100);
+}
+
+#form{
+    width: 300px;
+    background-color: lightgray;
+    display: none;
+    position:absolute;
+    border-radius: 3px;
+}
+
+#getList{
+    display: block;
+    border:1px solid transparent;
+    margin:5px;
+}
+
+#guardar{
+    display:inline-block;
+    width:70px ;
+    height: 30px;
+    border:1px solid transparent;
+    background-color: green;
+    border-radius: 3px;
+    color:white;
+    margin:5px;
+}
+
+.cancel{
+    background-color: transparent;
+    border:1px solid transparent;
+    font-size: 20px;
+    color:gray;
+
+}
+
+/* fin lists*/
+
+/* FIN CONTENT*/
