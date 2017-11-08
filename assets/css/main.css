@@ -89,7 +89,7 @@ li:nth-child(0n+4){
 /* INICIO CONTENT*/
 /* inicio título*/
 #content{
-    width: 100%;
+    width: 98%;
     position: relative;
     top:50px;
     left:20px;
@@ -139,14 +139,15 @@ p{
     display: inline-block;
     border:1px solid transparent;
     line-height: 30px;
-    margin: 0px;
-    
+    margin: 0px;    
 }
 
 /* fin título*/
 
 /*inicio lists*/
 #lists{
+    
+    width: 100%;
     position: relative;
     top:10px;
 }
