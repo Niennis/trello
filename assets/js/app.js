@@ -23,7 +23,7 @@ window.onload = function(){
         var btn_cancel_list= document.createElement('button');
             btn_cancel_list.setAttribute('class','btn_cancel_list');
         var icon_btn_cancel_list = document.createElement('i');
-            icon_btn_cancel_list.setAttribute('class','fa fa-times');
+            icon_btn_cancel_list.setAttribute('class','fa fa-times fa-2x');
             icon_btn_cancel_list.setAttribute('aria-hidden','true');
         input_list.value;
 // Asignando padres... brace yourselves...
@@ -41,7 +41,7 @@ window.onload = function(){
         // FUNCION PARA GUARDAR LISTA
 
         btn_save_list.addEventListener('click',function(){
-
+            
             // Llamar elementos necesarios
             // Crear elementos y atributos
             var div_list = document.createElement('div');
@@ -55,9 +55,10 @@ window.onload = function(){
             
             var menu_list = document.createElement('button');                
             var text_menu_list = document.createTextNode('...');
+            menu_list.setAttribute('class','menu_list')
             menu_list.appendChild(text_menu_list);
             
-            var add_card = document.createElement('button');
+            var add_card = document.createElement('a');
                 add_card.setAttribute('class','add_card');
             var text_add_card = document.createTextNode('Añadir una tarjeta...')
             add_card.appendChild(text_add_card);
@@ -122,16 +123,5 @@ window.onload = function(){
                 })
             })
         })
-
     })
-/* FUNCION PARA CAMBIAR DE TEXTO A LISTA */
-    
-/* FUNCIÓN PARA AGREGAR NOMBRE DE LISTA Y DESPLEGAR MENU DE TARJETAS */
-
 }
-
-
-
-
-/* FAAAANNYYYY ASÍ SE AGREGAN LOS STYLE, CON SIGNO IGUAL, 
-NO PARÉNTESIS!!!!*/

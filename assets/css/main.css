@@ -89,12 +89,12 @@ li:nth-child(0n+4){
 /* INICIO CONTENT*/
 /* inicio título*/
 #content{
-    width: 98%;
     position: relative;
     top:50px;
     left:20px;
     color:white;
-    border:1px solid orange;
+
+    white-space: nowrap;
 }
 
 #title{
@@ -154,41 +154,103 @@ p{
 /*inicio lists*/
 
 #board{
-    border: 1px solid blue;
-    
+    border: 1px solid transparent;
 }
 
 #btn_principal{
     background-color: rgb(199, 172, 221);
-    border: none;
-    width: 200px;
+    border-radius: 3px;
+    border:none;
+    width: 270px;
+    height: 40px;
     text-align: left;
-}
-
-.input_list{
-    background-color: salmon;
-}
-
-.name_list{
-    width:150px;
+    display : inline-flex;
+    color:rgb(112, 58, 112);
+    margin: 0px 10px 0px 0px;
 }
 
 .div_create_list{
-    border: 2px dotted white;
-    width:200px;
-    display:inline-block;
+    border: 2px solid transparent;
+    width: 270px;
+    float:left;
+    white-space: normal;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.input_list{
+    background-color: lightgray;
+    border:1px solid gray;
+    border-radius: 3px;
+    width: 266px;
+    height: 32px;
+    margin: 2px 0px 2px 2px;
+    -webkit-box-shadow:inset 0 0 10px gray;
+    -moz-box-shadow:inset 0 0 10px gray;
+         box-shadow:inset 0 0 10px gray;
+}
+
+.btn_save_list{
+    background-color: #26A535;
+    height: 30px;
+    width: 86px;
+    border: none;
+    border-radius: 3px;
+    color:white;
+    font-weight: bold;
+    margin: 2px 2px 2px 0px;
+    padding: 0px;
+    float: left;
+}
+
+.btn_cancel_list{
+    height: 30px;
+    width: 30px;
+    border: none;    
+    text-align: center;
+    background-color: transparent;
+    float: left;
+}
+
+.fa-times{
+    color:gray;
+    margin-left:-1px;    
 }
 
 .div_list{
-    width:200px;
-    border: 2px dotted cyan;
-    display:inline-block;
+    width: 270px;
+    background-color: lightgray;
+    border: 1px dotted transparent;
+    border-radius: 3px;
+    float:left;
+    white-space: normal;
+    margin: 0px 10px 0px 0px;
 }
 
+.div_list p{
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left:5px;
+    width:220px;
+}
+
+.menu_list{
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    float: right;
+    margin-right: 2px;
+}
 
 .add_card{
-    background-color: pink;
-    color:black;
+    background-color: transparent;
+    color:gray;
+    border: 1px solid transparent;
+    height:30px;
+    font-size: 14px;
+    display: inline-block;
+    margin: 3px;
 }
 
 
@@ -200,56 +262,4 @@ p{
 
 /* FIN CONTENT*/
 
-
-
-/* INTENTO ANTERIOR
-#lists{
-    
-    width: 100%;
-    position: relative;
-    top:10px;
-}
-
-#lista{
-    color:white;
-    font-size: 14px;
-    padding-left: 10px;
-    line-height: 40px;
-    width:270px;
-    height:40px;
-    border-radius: 2px;
-    background-color:rgb(90, 33, 100);
-}
-
-#form{
-    width: 300px;
-    background-color: lightgray;
-    display: none;
-    position:absolute;
-    border-radius: 3px;
-}
-
-#getList{
-    display: block;
-    border:1px solid transparent;
-    margin:5px;
-}
-
-#guardar{
-    display:inline-block;
-    width:70px ;
-    height: 30px;
-    border:1px solid transparent;
-    background-color: green;
-    border-radius: 3px;
-    color:white;
-    margin:5px;
-}
-
-.cancel{
-    background-color: transparent;
-    border:1px solid transparent;
-    font-size: 20px;
-    color:gray;
-}*/
 
