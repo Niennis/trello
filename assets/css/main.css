@@ -144,21 +144,14 @@ p{
 
 /* fin título*/
 
-/*----------------- no mover nada sobre esto -----------*/
-
-
-
-
-
-
-/*inicio lists*/
+/*inicio board*/
 
 #board{
     border: 1px solid transparent;
 }
 
 #btn_principal{
-    background-color: rgb(199, 172, 221);
+    background-color: #c7acdd;
     border-radius: 3px;
     border:none;
     width: 270px;
@@ -167,6 +160,17 @@ p{
     display : inline-flex;
     color:rgb(112, 58, 112);
     margin: 0px 10px 0px 0px;
+}
+
+.name_list{
+    width: 220px !important;    
+    overflow-wrap: break-word;
+    line-height: 20px;
+}
+
+#btn_principal:hover{
+    background-color: purple;
+    color:white;
 }
 
 .div_create_list{
@@ -198,9 +202,13 @@ p{
     border-radius: 3px;
     color:white;
     font-weight: bold;
-    margin: 2px 2px 2px 0px;
+    margin: 5px 5px 5px 5px;
     padding: 0px;
     float: left;
+}
+
+.btn_save_list:hover{
+    background-color: rgb(29, 134, 41);
 }
 
 .btn_cancel_list{
@@ -210,6 +218,7 @@ p{
     text-align: center;
     background-color: transparent;
     float: left;
+    margin-top:5px;
 }
 
 .fa-times{
@@ -232,7 +241,22 @@ p{
     font-weight: bold;
     font-size: 14px;
     margin-left:5px;
-    width:220px;
+    width:50%;
+}
+
+.fa-pencil{
+    float: right;
+    margin: -25px 10px 0px 0px;
+    color:  white;
+    padding: 2px;
+    border:1px solid transparent;
+}
+
+.fa-pencil:hover{
+    border:1px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(168, 38, 38);
+    color:black;
 }
 
 .menu_list{
@@ -253,12 +277,55 @@ p{
     margin: 3px;
 }
 
+.add_card:hover{
+    background-color: rgb(187, 183, 183);
+    color:rgb(105, 105, 105);
+    text-decoration: underline;
+    width: 98%;
+}
+
+.create_card{
+    width: 262px;
+    margin: 3px 0px 0px 5px;
+    border:none;
+    border-radius: 3px;
+    resize: none;       
+    overflow: hidden;
+    line-height: 18px;
+    
+}
+
+.menu_card{
+    float: right;
+    margin: 5px 10px 0px 0px;
+    padding: 0px 0px 3px 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.card{
+    
+    width: 260px;
+    border-radius: 3px;
+    margin:5px 5px;
+    background-color: white;
+}
+
+.card p{
+    font-weight: normal;
+    width: 260px;
+    border-radius: 3px;
+    margin:3px 5px;
+    overflow-wrap: break-word;
+    line-height: 18px; 
+}
+
+.card:hover{
+    background-color: transparent;
+}
 
 
-
-
-
-/* fin lists*/
+/* fin board*/
 
 /* FIN CONTENT*/
 

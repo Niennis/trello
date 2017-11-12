@@ -4,9 +4,8 @@ window.onload = function(){
     var section_content = document.getElementById('content');
     var div_board = document.getElementById('board');
     var btn_principal = document.getElementById('btn_principal');
-    
-    btn_principal.addEventListener('click', function(){
 
+    btn_principal.addEventListener('click', function(){
         
 // CREAR DIV CREADOR DE LISTAS, CON LOS SIGUIENTES ELEMENTOS
     //crear input de lista, boton guardar, boton cancelar
@@ -26,6 +25,7 @@ window.onload = function(){
             icon_btn_cancel_list.setAttribute('class','fa fa-times fa-2x');
             icon_btn_cancel_list.setAttribute('aria-hidden','true');
         input_list.value;
+        
 // Asignando padres... brace yourselves...
         btn_save_list.appendChild(text_btn_save_list);
         btn_cancel_list.appendChild(icon_btn_cancel_list);
@@ -37,6 +37,7 @@ window.onload = function(){
         div_board.insertBefore(div_create_list,btn_principal);
 
         btn_principal.style.display='none';
+         
 
         // FUNCION PARA GUARDAR LISTA
 
@@ -80,21 +81,26 @@ window.onload = function(){
                 //Lista, botón añadir, boton cancelar, boton menú
                 var create_card = document.createElement('textarea');
                 create_card.setAttribute('class','create_card');
+                create_card.setAttribute('rows','3');
                 create_card.value;
 
                 var btn_add_card = document.createElement('button');
+                btn_add_card.setAttribute('class','btn_save_list');
                 var text_btn_add_card = document.createTextNode('Añadir');
                 btn_add_card.appendChild(text_btn_add_card);
 
                 var btn_cancel_card = document.createElement('button');
+                btn_cancel_card.setAttribute('class','btn_cancel_list');
                 var text_btn_cancel_card = document.createElement('i');
                 text_btn_cancel_card.setAttribute('class','fa fa-times');
                 text_btn_cancel_card.setAttribute('aria-hidden','true');
                 btn_cancel_card.appendChild(text_btn_cancel_card);
                 
                 var btn_menu_add_card = document.createElement('button');
+                btn_menu_add_card.setAttribute('class','menu_card')
                 var text_btn_menu_add_card= document.createTextNode('...')
                 btn_menu_add_card.appendChild(text_btn_menu_add_card);
+                add_card.style.display='none';
 
                 // Agregar elementos
 
@@ -105,6 +111,7 @@ window.onload = function(){
                 
                 btn_add_card.addEventListener('click',function(){
                     var card = document.createElement('div');
+                    card.setAttribute('class','card');
                     var name_card = document.createElement('p')
                     var text_card = document.createTextNode(create_card.value);
 
@@ -116,9 +123,8 @@ window.onload = function(){
                     pencil.setAttribute('aria-hidden','true');
                     card.appendChild(pencil);
 
-                    div_list.insertBefore(card,create_card);
+                    div_list.insertBefore(card,add_card);
                     create_card.value='';
-                    add_card.style.display='none';
 
                 })
             })
